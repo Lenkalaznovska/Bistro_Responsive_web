@@ -17,6 +17,7 @@ Bistro U Tasty je malé, rodinné bistro specializující se na domácí kuchyni
 - **Galerii**: Obrázky jídel a bistra.
 - **Recenze**: Recenze zákazníků s možností přidání nové recenze.
 - **Kontaktní informace**: Email, telefon a adresa bistra.
+- **Responzivní design**: Stránka je optimalizovaná pro zobrazení na různých zařízeních včetně mobilních telefonů a tabletů.
 
 ## Použité technologie
 
