@@ -43,4 +43,4 @@ Bistro U Tasty je malé, rodinné bistro specializující se na domácí kuchyni
 - `conn.php`: Připojení k MySQL databázi.
 - `css/style.css`: Stylování stránky.
 - `images/`: Obrázky používané na webu.
-- `favicon/`: Ikony používané na webu.
+- `favicon/`: Ikona používaná na webu.
