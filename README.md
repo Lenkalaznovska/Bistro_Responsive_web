@@ -1,6 +1,6 @@
 # Bistro U Tasty
 
-Welcome to the Bistro U Tasty website repository. This project is a simple website for a family bistro that showcases the bistro’s offerings, menu, reviews, and contact information. You can view the live version of the site [here](http://bistro.wz.cz).
+Welcome to the Bistro U Tasty website repository. This project is a simple website for a family bistro that showcases the bistro’s offerings, menu, reviews, and contact information. You can view the live version of the site [here](http://bistro.wz.cz:8080).
 
 ## Contents
 
