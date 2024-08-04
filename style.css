@@ -1,0 +1,344 @@
+:root {
+  /* Font and color variables */
+  --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --bg-color: #f8f9fa;
+  --text-color: #212529;
+  
+  /* Header styles */
+  --header-bg-image: url("../images/interior.jpg");
+  --header-color: #fff;
+  --header-font-size: 3em;
+  
+  /* Main content */
+  --main-max-width: 1200px;
+  --main-bg-color: #fff;
+  --main-border-radius: 10px;
+  --main-box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  
+  /* Border and price colors */
+  --border-color: #6c5ce7;
+  --price-color: #6c5ce7;
+  --ingredients-color: #6c757d;
+  
+  /* Gallery styles */
+  --gallery-gap: 20px;
+  --gallery-hover-scale: 1.1;
+  
+  /* Review styles */
+  --review-margin: 30px auto;
+  --review-max-width: 800px;
+  --review-item-margin-bottom: 30px;
+  
+  /* Form input styles */
+  --input-padding: 14px;
+  --input-margin: 12px 0;
+  --input-border-color: #ced4da;
+  --input-border-radius: 6px;
+  
+  /* Button styles */
+  --button-padding: 12px 24px;
+  --button-bg-color: #6c5ce7;
+  --button-hover-bg-color: #5a4f8a;
+  --button-color: #fff;
+  --button-border-radius: 6px;
+  
+  /* Success message styles */
+  --success-bg-color: #d4edda;
+  --success-text-color: #155724;
+  --success-border-color: #c3e6cb;
+  --success-padding: 12px;
+  
+  /* Navigation styles */
+  --nav-bg-color: rgba(255, 255, 255, 0.9);
+  --nav-hover-bg-color: #d8c6f5;
+  --nav-font-color: #333;
+  --nav-hover-font-color: #fff;
+}
+
+body {
+  /* Set font, margins, and padding for the body */
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  text-align: center;
+  line-height: 1.6;
+}
+
+header {
+  /* Style the header with background image, text color, and flexbox */
+  background-image: var(--header-bg-image);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  color: var(--header-color);
+  text-align: center;
+  font-size: var(--header-font-size);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  /* Style the navigation with background color, shadow, and positioning */
+  background-color: var(--nav-bg-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 1000px;
+  z-index: 1;
+  border-radius: 12px;
+}
+
+nav ul {
+  /* Style the navigation list */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  /* Remove margin from navigation list items */
+  margin: 0;
+}
+
+nav ul li a {
+  /* Style navigation links with padding, color, and transitions */
+  display: block;
+  padding: 12px 20px;
+  color: var(--nav-font-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  /* Style navigation link hover state */
+  background-color: var(--nav-hover-bg-color);
+  color: var(--nav-hover-font-color);
+}
+
+main {
+  /* Style the main content area with padding, width, and shadows */
+  padding: 40px;
+  max-width: var(--main-max-width);
+  margin: 0 auto;
+  margin-top: 50px;
+  background: var(--main-bg-color);
+  border-radius: var(--main-border-radius);
+  box-shadow: var(--main-box-shadow);
+}
+
+main {
+  /* Add border to the main content area */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+section {
+  /* Add margin to sections */
+  margin-top: 40px;
+}
+
+h2, h3 {
+  /* Style headings with bottom border and padding */
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 16px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+ul {
+  /* Remove list style and margins from unordered lists */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  /* Add margin to list items */
+  margin: 12px 0;
+}
+
+.menu-item {
+  /* Add margin to menu items */
+  margin-bottom: 20px;
+}
+
+.price {
+  /* Style price text with font weight and color */
+  font-weight: 700;
+  color: var(--price-color);
+  font-size: 1.2em;
+}
+
+.ingredients {
+  /* Style ingredients text with italic font and color */
+  font-style: italic;
+  color: var(--ingredients-color);
+  font-size: 1.1em;
+}
+
+.gallery {
+  /* Style gallery with flexbox and gap */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gallery-gap);
+}
+
+.gallery img {
+  /* Style gallery images with width, margin, and transition */
+  width: calc(25% - var(--gallery-gap));
+  margin-bottom: var(--gallery-gap);
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+  /* Style hover effect for gallery images */
+  transform: scale(var(--gallery-hover-scale));
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1024px) {
+  header {
+    /* Adjust header size for medium screens */
+    height: 60vh;
+    font-size: 2.6em;
+  }
+
+  nav {
+    /* Adjust navigation for medium screens */
+    width: 90%;
+    top: 65%;
+  }
+
+  .gallery img {
+    /* Adjust gallery image width for medium screens */
+    width: calc(33.333% - var(--gallery-gap));
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery img {
+    /* Adjust gallery image width for smaller screens */
+    width: calc(50% - var(--gallery-gap));
+  }
+
+  header {
+    /* Adjust header size for smaller screens */
+    height: 50vh;
+    font-size: 2.2em;
+  }
+
+  .menu-item {
+    /* Adjust menu item margin for smaller screens */
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery img {
+    /* Adjust gallery image width for extra-small screens */
+    width: calc(100% - var(--gallery-gap));
+  }
+
+  header {
+    /* Adjust header size for extra-small screens */
+    height: 40vh;
+    font-size: 1.8em;
+  }
+
+  .menu-item {
+    /* Adjust menu item margin for extra-small screens */
+    margin-bottom: 12px;
+  }
+
+  .contact {
+    /* Style contact section for smaller screens */
+    text-align: center;
+    margin: 20px auto;
+    max-width: 100%;
+    padding: 20px;
+    background-color: var(--main-bg-color);
+    border-radius: var(--main-border-radius);
+    box-shadow: var(--main-box-shadow);
+  }
+}
+
+.reviews {
+  /* Style reviews section with margin and maximum width */
+  margin: var(--review-margin);
+  max-width: var(--review-max-width);
+}
+
+.review-item {
+  /* Style individual review items */
+  margin-bottom: var(--review-item-margin-bottom);
+  text-align: left;
+}
+
+.review-form {
+  /* Style review form with top margin */
+  margin-top: 20px;
+}
+
+.review-form input,
+.review-form textarea {
+  /* Style form inputs and textareas */
+  width: 100%;
+  padding: var(--input-padding);
+  margin: var(--input-margin);
+  border: 1px solid var(--input-border-color);
+  border-radius: var(--input-border-radius);
+  box-sizing: border-box;
+}
+
+.review-form button {
+  /* Style the submit button */
+  padding: var(--button-padding);
+  background-color: var(--button-bg-color);
+  color: var(--button-color);
+  border: none;
+  border-radius: var(--button-border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.review-form button:hover {
+  /* Style button hover effect */
+  background-color: var(--button-hover-bg-color);
+  transform: translateY(-2px);
+}
+
+.contact {
+  /* Style contact section with text alignment and padding */
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: var(--main-bg-color);
+}
+
+.success-message {
+  /* Style success message with background color, text color, and padding */
+  background-color: var(--success-bg-color);
+  color: var(--success-text-color);
+  border: 1px solid var(--success-border-color);
+  padding: var(--success-padding);
+  margin-bottom: var(--success-margin-bottom);
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
