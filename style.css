@@ -279,20 +279,22 @@ li {
 }
 
 .reviews {
-  /* Style reviews section with margin and maximum width */
+  /* Style reviews section with margin, maximum width, and centering */
   margin: var(--review-margin);
   max-width: var(--review-max-width);
+  text-align: center;
 }
 
 .review-item {
-  /* Style individual review items */
+  /* Style individual review items with margin and text alignment */
   margin-bottom: var(--review-item-margin-bottom);
-  text-align: left;
+  text-align: center; /* Center-align text for consistency */
 }
 
 .review-form {
-  /* Style review form with top margin */
+  /* Style review form with top margin and centering */
   margin-top: 20px;
+  text-align: center; /* Center-align form elements */
 }
 
 .review-form input,
