@@ -28,7 +28,7 @@
         </section>
         <!-- Specialties section highlighting our focus -->
         <section id="specialties">
-            <h2>Naše Specializace</h2>
+            <h2>Naše specializace</h2>
             <p>V našem bistru se zaměřujeme na:</p>
             <ul>
                 <li>Čerstvé saláty z lokálních surovin</li>
@@ -127,10 +127,10 @@
         <section id="gallery">
             <h2>Galerie</h2>
             <div class="gallery">
-                <img src="images/soup.jpg" alt="Polévka" />
-                <img src="images/salad.jpg" alt="Salát" />
-                <img src="images/apple_pie.jpg" alt="Štrúdl" />
-                <img src="images/vegetables.jpg" alt="Zelenina" />
+                <img src="images/soup.jpg" alt="Polévka">
+                <img src="images/salad.jpg" alt="Salát">
+                <img src="images/apple_pie.jpg" alt="Štrúdl">
+                <img src="images/vegetables.jpg" alt="Zelenina">
             </div>
         </section>
         <!-- Reviews section with functionality to submit and display reviews -->
@@ -237,7 +237,7 @@
                         form.reset(); // Reset the form after submission
                         const successMessage = document.createElement('p');
                         successMessage.classList.add('success-message');
-                        successMessage.textContent = 'Review successfully submitted.';
+                        successMessage.textContent = 'Recenze byla úspěšně přidána.';
                         document.querySelector('.reviews').insertBefore(successMessage, document.getElementById('reviews-list'));
                         loadReviews(); // Load new reviews
                     }
