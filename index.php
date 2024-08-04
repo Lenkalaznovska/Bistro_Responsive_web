@@ -8,6 +8,7 @@
     <link rel="icon" href="favicon/food.png" type="image/png">
 </head>
 <body>
+    <!-- Header section with the main title and navigation menu -->
     <header>
         <h1>Bistro U Tasty</h1>
         <nav>
@@ -20,10 +21,12 @@
         </nav>
     </header>
     <main>
+        <!-- Welcome section with a brief introduction -->
         <section id="welcome">
             <h2>Vítejte v našem bistru!</h2>
             <p>Jsme malé, rodinné bistro specializující se na domácí kuchyni a čerstvé suroviny. Přijďte si pochutnat na našich lahodných pokrmech a užijte si příjemnou atmosféru.</p>
         </section>
+        <!-- Specialties section highlighting our focus -->
         <section id="specialties">
             <h2>Naše Specializace</h2>
             <p>V našem bistru se zaměřujeme na:</p>
@@ -35,6 +38,7 @@
                 <li>Domácí dezerty a zákusky</li>
             </ul>
         </section>
+        <!-- Menu section with detailed offerings -->
         <section id="menu" class="menu-section">
             <h2>Nabídka</h2>
             <div>
@@ -119,6 +123,7 @@
                 </ul>
             </div>
         </section>
+        <!-- Gallery section showcasing images of dishes -->
         <section id="gallery">
             <h2>Galerie</h2>
             <div class="gallery">
@@ -128,39 +133,40 @@
                 <img src="images/vegetables.jpg" alt="Zelenina" />
             </div>
         </section>
+        <!-- Reviews section with functionality to submit and display reviews -->
         <section id="reviews" class="reviews">
             <h2>Recenze</h2>
             <div id="reviews-list">
                 <?php
-                // Připojení k databázi
+                // Connecting to the database
                 include("conn.php");
 
-                // Zpracování formuláře, pokud byl odeslán
+                // Processing form submission if it has been sent
                 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                    // Získání dat z formuláře a únik proti SQL injection
+                    // Getting data from the form and escaping against SQL injection
                     $name = mysqli_real_escape_string($conn, $_POST['name']);
                     $review = mysqli_real_escape_string($conn, $_POST['review']);
-                    $created_at = date('Y-m-d H:i:s'); // Aktuální časové razítko
+                    $created_at = date('Y-m-d H:i:s'); // Current timestamp
 
-                    // Příprava dotazu s použitím prepared statements
+                    // Preparing the query using prepared statements
                     $sql = "INSERT INTO reviews (name, review, created_at) VALUES (?, ?, ?)";
                     $stmt = mysqli_prepare($conn, $sql);
 
-                    // Vazba parametrů
+                    // Binding parameters
                     mysqli_stmt_bind_param($stmt, "sss", $name, $review, $created_at);
 
-                    // Spuštění dotazu
+                    // Executing the query
                     if (mysqli_stmt_execute($stmt)) {
                         echo "<p class='success-message'>Recenze byla úspěšně přidána.</p>";
                     } else {
                         echo "<p>Chyba při přidávání recenze: " . mysqli_stmt_error($stmt) . "</p>";
                     }
 
-                    // Uzavření přípraveného dotazu
+                    // Closing the prepared statement
                     mysqli_stmt_close($stmt);
                 }
 
-                // Načtení existujících recenzí
+                // Fetching existing reviews
                 $sql_select = "SELECT * FROM reviews ORDER BY created_at DESC";
                 $result = mysqli_query($conn, $sql_select);
 
@@ -181,6 +187,7 @@
                 mysqli_close($conn);
                 ?>
             </div>
+            <!-- Review submission form -->
             <form class="review-form" id="review-form" method="post">
                 <h3>Napište recenzi</h3>
                 <label for="name">Vaše jméno:</label>
@@ -190,12 +197,13 @@
                 <button type="submit" name="submit">Odeslat recenzi</button>
             </form>
         </section>
+        <!-- Contact section with contact details and a map -->
         <section id="contact" class="contact">
             <h2>Kontakt</h2>
             <p><strong>Email:</strong> <a href="mailto:info@bistroutasty.cz">info@bistroutasty.cz</a></p>
             <p><strong>Telefon:</strong> <a href="tel:+420123456789">+420 123 456 789</a></p>
             <p><strong>Adresa:</strong> Ulice 123, Město, PSČ 12345</p>
-            <!-- Přidání mapy -->
+            <!-- Adding a map -->
             <div class="map">
                 <h3>Naše lokalita</h3>
                 <a href="https://mapy.cz" target="_blank">
@@ -204,18 +212,19 @@
             </div>
         </section>
     </main>
+    <!-- Footer with copyright information -->
     <footer>
         <div class="container">
             <p>&copy; 2024 Bistro U Tasty. Všechna práva vyhrazena.</p>
         </div>
     </footer>
 
+    <!-- JavaScript for handling review submission via AJAX -->
     <script>
-        // JavaScript pro odesílání recenze pomocí AJAX
         document.addEventListener('DOMContentLoaded', function() {
             const form = document.getElementById('review-form');
             form.addEventListener('submit', function(event) {
-                event.preventDefault(); // Zabránit výchozímu odeslání formuláře
+                event.preventDefault(); // Prevent the default form submission
 
                 const formData = new FormData(form);
                 const xhr = new XMLHttpRequest();
@@ -225,19 +234,19 @@
                 xhr.onreadystatechange = function() {
                     if (xhr.readyState === 4 && xhr.status === 200) {
                         const response = xhr.responseText;
-                        form.reset(); // Resetovat formulář po odeslání
+                        form.reset(); // Reset the form after submission
                         const successMessage = document.createElement('p');
                         successMessage.classList.add('success-message');
-                        successMessage.textContent = 'Recenze byla úspěšně odeslána.';
+                        successMessage.textContent = 'Review successfully submitted.';
                         document.querySelector('.reviews').insertBefore(successMessage, document.getElementById('reviews-list'));
-                        loadReviews(); // Načtení nových recenzí
+                        loadReviews(); // Load new reviews
                     }
                 };
 
                 xhr.send(formData);
             });
 
-            // Funkce pro načtení a zobrazení nových recenzí
+            // Function to load and display new reviews
             function loadReviews() {
                 const xhr = new XMLHttpRequest();
                 xhr.open('GET', 'fetch_reviews.php', true);
