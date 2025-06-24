@@ -1,7 +1,7 @@
 🍽️ Bistro U Tasty
 Vítejte v repozitáři webové stránky Bistro U Tasty. Tento projekt představuje jednoduchou a moderní webovou prezentaci rodinného bistra, která obsahuje nabídku jídel, recenze, fotogalerii i kontaktní informace.
 
-👉 Zobrazit online verzi projektu
+👉 Zobrazit online verzi projektu 🔗 http://bistro.wz.cz:8080
 
 📄 Obsah
 Popis projektu
