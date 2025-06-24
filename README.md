@@ -42,3 +42,9 @@ The website includes:
 
 - **XAMPP** – local server with Apache, MySQL, and PHP  
 - **Apache** – running the PHP application on a web server
+
+## API
+
+The project includes the following API:
+
+- **Tawk.to chat:** API for integrating Tawk.to live chat for real-time communication with users.
