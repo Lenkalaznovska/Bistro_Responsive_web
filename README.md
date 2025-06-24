@@ -4,6 +4,8 @@ Vítejte v repozitáři webové stránky **Bistro U Tasty**. Tento projekt před
 
 👉 [Zobrazit online verzi projektu](http://bistro.wz.cz:8080)
 
+![image](https://github.com/user-attachments/assets/7cbf9131-9ea8-4c99-adf1-17f45d2f9cac)
+
 ---
 
 ## 🧾 Popis projektu
@@ -38,7 +40,3 @@ Na webu najdete:
 
 - **XAMPP** – lokální server s Apache, MySQL a PHP  
 - **Apache** – spuštění PHP aplikace na webovém serveru
-
----
-
-![image](https://github.com/user-attachments/assets/7cbf9131-9ea8-4c99-adf1-17f45d2f9cac)
