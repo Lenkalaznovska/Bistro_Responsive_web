@@ -6,14 +6,6 @@ Vítejte v repozitáři webové stránky **Bistro U Tasty**. Tento projekt před
 
 ---
 
-## 📄 Obsah
-
-- [Popis projektu](#popis-projektu)  
-- [Použité technologie](#použité-technologie)  
-- [Struktura projektu](#struktura-projektu)  
-
----
-
 ## 🧾 Popis projektu
 
 **Bistro U Tasty** je malé rodinné bistro, které se zaměřuje na domácí kuchyni a čerstvé suroviny. Webová stránka slouží jako jednoduchá a přehledná prezentace podniku.
