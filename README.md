@@ -1,46 +1,56 @@
-# Bistro U Tasty
+🍽️ Bistro U Tasty
+Vítejte v repozitáři webové stránky Bistro U Tasty. Tento projekt představuje jednoduchou a moderní webovou prezentaci rodinného bistra, která obsahuje nabídku jídel, recenze, fotogalerii i kontaktní informace.
 
-Welcome to the Bistro U Tasty website repository. This project is a simple website for a family bistro that showcases the bistro’s offerings, menu, reviews, and contact information. You can view the live version of the site [here](http://bistro.wz.cz:8080).
+👉 Zobrazit online verzi projektu
 
-## Contents
+📄 Obsah
+Popis projektu
 
-- [Description](#description)
-- [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
+Použité technologie
 
-## Description
+Struktura projektu
 
-Bistro U Tasty is a small, family-owned bistro specializing in home-cooked meals and fresh ingredients. On this website, you will find:
+🧾 Popis projektu
+Bistro U Tasty je malé rodinné bistro, které se zaměřuje na domácí kuchyni a čerstvé suroviny. Webová stránka slouží jako jednoduchá a přehledná prezentace podniku.
 
-- **Homepage:** Introduction to the bistro and its specialties.
-- **Menu Section:** Detailed menu with prices and ingredients.
-- **Gallery:** Images of dishes and the bistro.
-- **Reviews:** Customer reviews with the option to add new reviews.
-- **Contact Information:** Email, phone number, and address of the bistro.
-- **Responsive Design:** The site is optimized for display on various devices, including mobile phones and tablets.
+Na webu najdete:
 
-## Technologies Used
+Úvodní stránku – představení bistra a jeho specialit
 
-### Frontend
+Sekci s menu – detailní nabídka jídel včetně cen a ingrediencí
 
-- **HTML5:** Structure of the website.
-- **CSS3:** Styling of the website.
-- **JavaScript:** Interactivity on the page, AJAX for asynchronously submitting reviews.
+Galerii – fotografie pokrmů a interiéru
 
-### Backend
+Recenze – zobrazování a přidávání hodnocení od zákazníků
 
-- **PHP:** Processing reviews and interacting with the database.
-- **MySQL:** Database for storing reviews.
+Kontakt – e-mail, telefon, adresa
 
-### Development Tools
+Responzivní design – optimalizace pro mobilní zařízení, tablety i PC
 
-- **XAMPP:** Local web server containing Apache, MySQL, and PHP.
-- **Apache Server:** Web server for running PHP applications.
+🛠️ Použité technologie
+💻 Frontend
+HTML5 – struktura stránky
 
-## Project Structure
+CSS3 – stylování vzhledu
 
-- `index.php`: Main page with content and functionalities.
-- `conn.php`: Connection to the MySQL database.
-- `css/style.css`: Styling of the page.
-- `images/`: Images used on the website.
-- `favicon/`: Icon used on the website.
+JavaScript – interaktivita (např. odesílání recenzí pomocí AJAXu)
+
+🔙 Backend
+PHP – zpracování recenzí a komunikace s databází
+
+MySQL – ukládání recenzí do databáze
+
+🧰 Vývojové nástroje
+XAMPP – lokální server s Apache, MySQL a PHP
+
+Apache – spuštění PHP aplikace na webovém serveru
+
+📁 Struktura projektu
+bash
+Zkopírovat
+Upravit
+/index.php        - Hlavní soubor s obsahem stránky
+/conn.php         - Připojení k databázi MySQL
+/css/style.css    - Stylování a design stránky
+/images/          - Obrázky pokrmů a galerie
+/favicon/         - Ikona webu pro prohlížeč
