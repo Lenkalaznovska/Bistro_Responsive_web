@@ -41,10 +41,4 @@ Na webu najdete:
 
 ---
 
-## 📁 Struktura projektu
-
-/index.php - Hlavní soubor s obsahem stránky
-/conn.php - Připojení k databázi MySQL
-/css/style.css - Stylování a design stránky
-/images/ - Obrázky pokrmů a galerie
-/favicon/ - Ikona webu pro prohlížeč
+![image](https://github.com/user-attachments/assets/7cbf9131-9ea8-4c99-adf1-17f45d2f9cac)
