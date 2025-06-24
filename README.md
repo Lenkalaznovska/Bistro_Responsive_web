@@ -1,42 +1,44 @@
 # 🍽️ Bistro U Tasty
 
-Vítejte v repozitáři webové stránky **Bistro U Tasty**. Tento projekt představuje jednoduchou a moderní webovou prezentaci rodinného bistra, která obsahuje nabídku jídel, recenze, fotogalerii i kontaktní informace.
+Welcome to the repository of the **Bistro U Tasty** website.  
+This project represents a simple and modern web presentation for a family bistro, featuring a food menu, customer reviews, a photo gallery, and contact information.
 
-👉 [Zobrazit online verzi projektu](http://bistro.wz.cz:8080)
+👉 [View the live project online](http://bistro.wz.cz:8080)
 
 ![image](https://github.com/user-attachments/assets/7cbf9131-9ea8-4c99-adf1-17f45d2f9cac)
 
 ---
 
-## 🧾 Popis projektu
+## 🧾 Project Description
 
-**Bistro U Tasty** je malé rodinné bistro, které se zaměřuje na domácí kuchyni a čerstvé suroviny. Webová stránka slouží jako jednoduchá a přehledná prezentace podniku.
+**Bistro U Tasty** is a small, family-owned bistro focused on homemade meals and fresh ingredients.  
+The website serves as a clear and easy-to-navigate presentation of the business.
 
-Na webu najdete:
+The website includes:
 
-- **Úvodní stránku** – představení bistra a jeho specialit  
-- **Sekci s menu** – detailní nabídka jídel včetně cen a ingrediencí  
-- **Galerii** – fotografie pokrmů a interiéru  
-- **Recenze** – zobrazování a přidávání hodnocení od zákazníků  
-- **Kontakt** – e-mail, telefon, adresa  
-- **Responzivní design** – optimalizace pro mobilní zařízení, tablety i PC
+- **Homepage** – introduction to the bistro and its specialties  
+- **Menu Section** – detailed list of meals with prices and ingredients  
+- **Gallery** – photos of dishes and the interior  
+- **Reviews** – display and submission of customer feedback  
+- **Contact** – email, phone, and address  
+- **Responsive Design** – optimized for mobile devices, tablets, and desktops
 
 ---
 
-## 🛠️ Použité technologie
+## 🛠️ Technologies Used
 
 ### 💻 Frontend
 
-- **HTML5** – struktura stránky  
-- **CSS3** – stylování vzhledu  
-- **JavaScript** – interaktivita (např. odesílání recenzí pomocí AJAXu)
+- **HTML5** – structure of the page  
+- **CSS3** – styling and visual design  
+- **JavaScript** – interactivity (e.g., submitting reviews via AJAX)
 
 ### 🔙 Backend
 
-- **PHP** – zpracování recenzí a komunikace s databází  
-- **MySQL** – ukládání recenzí do databáze  
+- **PHP** – processing reviews and communication with the database  
+- **MySQL** – storing reviews in the database
 
-### 🧰 Vývojové nástroje
+### 🧰 Development Tools
 
-- **XAMPP** – lokální server s Apache, MySQL a PHP  
-- **Apache** – spuštění PHP aplikace na webovém serveru
+- **XAMPP** – local server with Apache, MySQL, and PHP  
+- **Apache** – running the PHP application on a web server
